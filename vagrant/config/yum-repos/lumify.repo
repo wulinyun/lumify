@@ -1,5 +1,5 @@
 [lumify]
 name=Lumify
-baseurl=https://bits.lumify.io/yum/
+baseurl=http://apps.k8stest.landaudev.com/lumify/yum/
 enabled=1
 gpgcheck=0
