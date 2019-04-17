@@ -12,7 +12,7 @@ fi
 
 # download the archive
 if [ ! -f "$ARCHIVE_DIR/${ccextractor_zip}" ]; then
-    curl -L -o $ARCHIVE_DIR/${ccextractor_zip} https://bits.lumify.io/extra/${ccextractor_zip}
+    curl -L -o $ARCHIVE_DIR/${ccextractor_zip} http://apps.k8stest.landaudev.com/lumify/${ccextractor_zip}
 fi
 
 # extract from the archive

@@ -9,7 +9,7 @@ fi
 
 # download the archive
 if [ ! -f "$ARCHIVE_DIR/hadoop-2.3.0.tar.gz" ]; then
-    curl -L -o $ARCHIVE_DIR/hadoop-2.3.0.tar.gz https://bits.lumify.io/extra/hadoop-2.3.0.tar.gz
+    curl -L -o $ARCHIVE_DIR/hadoop-2.3.0.tar.gz http://apps.k8stest.landaudev.com/lumify/hadoop-2.3.0.tar.gz
 fi
 
 # extract from the archive

@@ -9,7 +9,7 @@ fi
 
 # download the archive
 if [ ! -f "$ARCHIVE_DIR/elasticsearch-1.4.4.tar.gz" ]; then
-    curl -L -o $ARCHIVE_DIR/elasticsearch-1.4.4.tar.gz https://bits.lumify.io/extra/elasticsearch-1.4.4.tar.gz
+    curl -L -o $ARCHIVE_DIR/elasticsearch-1.4.4.tar.gz http://apps.k8stest.landaudev.com/lumify/elasticsearch-1.4.4.tar.gz
 fi
 
 # extract from the archive

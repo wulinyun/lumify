@@ -10,7 +10,7 @@ fi
 
 # download the archive
 if [ ! -f "$ARCHIVE_DIR/jdk-7u71-linux-x64.tar.gz" ]; then
-    curl -L -o $ARCHIVE_DIR/jdk-7u71-linux-x64.tar.gz https://bits.lumify.io/extra/jdk-7u71-linux-x64.tar.gz
+    curl -L -o $ARCHIVE_DIR/jdk-7u71-linux-x64.tar.gz http://apps.k8stest.landaudev.com/lumify/jdk-7u71-linux-x64.tar.gz
 fi
 
 # extract from the archive
@@ -26,14 +26,14 @@ JAI_FILE=jai-1_1_3-lib-linux-amd64-jdk.bin
 JAI_IMAGEIO_FILE=jai_imageio-1_1-lib-linux-amd64-jdk.bin
 
 (cd /opt/jdk
-  curl -L https://bits.lumify.io/extra/java/${JAI_FILE} -O
+  curl -L http://apps.k8stest.landaudev.com/lumify/${JAI_FILE} -O
   sed -i -e 's|more <<EOF|cat > /dev/null <<EOF|' \
          -e 's/agreed=$/agreed=1/' \
          ${JAI_FILE}
   chmod u+x ${JAI_FILE}
   ./${JAI_FILE} && rm ./${JAI_FILE}
 
-  curl -L https://bits.lumify.io/extra/java/${JAI_IMAGEIO_FILE} -O
+  curl -L http://apps.k8stest.landaudev.com/lumify/${JAI_IMAGEIO_FILE} -O
   chmod u+x ${JAI_IMAGEIO_FILE}
   sed -i -e 's|more <<EOF|cat > /dev/null <<EOF|' \
          -e 's/agreed=$/agreed=1/' \

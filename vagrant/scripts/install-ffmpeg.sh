@@ -16,13 +16,13 @@ fi
 
 # download the archives
 if [ ! -f "$ARCHIVE_DIR/lame-3.99.5.tar.gz" ]; then
-    curl -L -o $ARCHIVE_DIR/lame-3.99.5.tar.gz https://bits.lumify.io/extra/lame-3.99.5.tar.gz
+    curl -L -o $ARCHIVE_DIR/lame-3.99.5.tar.gz http://apps.k8stest.landaudev.com/lumify/lame-3.99.5.tar.gz
 fi
 if [ ! -f "$ARCHIVE_DIR/libogg-1.3.2.tar.gz" ]; then
-    curl -L -o $ARCHIVE_DIR/libogg-1.3.2.tar.gz https://bits.lumify.io/extra/libogg-1.3.2.tar.gz
+    curl -L -o $ARCHIVE_DIR/libogg-1.3.2.tar.gz http://apps.k8stest.landaudev.com/lumify/libogg-1.3.2.tar.gz
 fi
 if [ ! -f "$ARCHIVE_DIR/libvorbis-1.3.4.tar.gz" ]; then
-    curl -L -o $ARCHIVE_DIR/libvorbis-1.3.4.tar.gz https://bits.lumify.io/extra/libvorbis-1.3.4.tar.gz
+    curl -L -o $ARCHIVE_DIR/libvorbis-1.3.4.tar.gz http://apps.k8stest.landaudev.com/lumify/libvorbis-1.3.4.tar.gz
 fi
 
 # extract from the archives

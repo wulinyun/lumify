@@ -3,7 +3,7 @@
 # Add yum repositories
 echo "Install yum reppositories"
 cp /vagrant/vagrant/config/yum-repos/elasticsearch.repo /etc/yum.repos.d/elasticsearch.repo
-cp /vagrant/vagrant/config/yum-repos/lumify.repo /etc/yum.repos.d/lumify.repo
+cp /vagrant/vagrant/config/yum-repos/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo
 
 # Install RPM packages
 echo "Install RPM packages"
@@ -33,6 +33,8 @@ echo "export PATH=\$PATH:/opt/maven/bin" >> /etc/profile.d/maven.sh
 echo "export MVN_HOME=/opt/maven" >> /etc/profile.d/maven.sh
 source /etc/profile.d/maven.sh
 /bin/bash /vagrant/vagrant/scripts/install-maven.sh
+#maven setting.xml
+cp /vagrant/vagrant/config/maven/config/settings.xml /opt/apache-maven-3.2.5/conf/settings.xml
 
 # Install ZooKeeper
 echo "Install ZooKeeper"
@@ -93,7 +95,7 @@ echo "Install RabbitMQ"
 echo "export PATH=\$PATH:/opt/rabbitmq/sbin" >> /etc/profile.d/rabbitmq.sh
 source /etc/profile.d/rabbitmq.sh
 /bin/bash /vagrant/vagrant/scripts/install-rabbitmq.sh
-cp /vagrant/vagrant/config/rabbitmq/etc/rabbitmq/rabbitmq.config /opt/rabbitmq_server-3.4.1/etc/rabbitmq/rabbitmq.config
+cp /vagrant/vagrant/config/rabbitmq/etc/rabbitmq/rabbitmq.config /opt/rabbitmq_server-3.5.7/etc/rabbitmq/rabbitmq.config
 cp /vagrant/vagrant/config/rabbitmq/rabbitmq_init.sh /etc/init.d/rabbitmq
 chmod +x /etc/init.d/rabbitmq
 chkconfig --add rabbitmq

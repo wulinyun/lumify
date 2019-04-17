@@ -1,6 +1,6 @@
 #!/bin/bash -eu
 
-ant_version=1.9.4
+ant_version=1.9.14
 ant_tgz=apache-ant-${ant_version}-bin.tar.gz
 
 opencv_version=2.4.9
@@ -15,10 +15,10 @@ fi
 
 # download the archives
 if [ ! -f "$ARCHIVE_DIR/${ant_tgz}" ]; then
-    curl -L -o $ARCHIVE_DIR/${ant_tgz} https://bits.lumify.io/extra/${ant_tgz}
+    curl -L -o $ARCHIVE_DIR/${ant_tgz} http://apps.k8stest.landaudev.com/lumify/${ant_tgz}
 fi
 if [ ! -f "$ARCHIVE_DIR/${opencv_zip}" ]; then
-    curl -L -o $ARCHIVE_DIR/${opencv_zip} https://bits.lumify.io/extra/${opencv_zip}
+    curl -L -o $ARCHIVE_DIR/${opencv_zip} http://apps.k8stest.landaudev.com/lumify/${opencv_zip}
 fi
 
 # extract from the archives

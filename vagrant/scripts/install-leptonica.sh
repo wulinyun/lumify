@@ -15,7 +15,7 @@ fi
 
 # download the archive
 if [ ! -f "$ARCHIVE_DIR/${leptonica_tgz}" ]; then
-    curl -L -o $ARCHIVE_DIR/${leptonica_tgz} https://bits.lumify.io/extra/${leptonica_tgz}
+    curl -L -o $ARCHIVE_DIR/${leptonica_tgz} http://apps.k8stest.landaudev.com/lumify/${leptonica_tgz}
 fi
 
 # extract from the archive

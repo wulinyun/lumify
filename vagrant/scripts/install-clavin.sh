@@ -13,7 +13,7 @@ fi
 
 # download the archive
 if [ ! -f "$ARCHIVE_DIR/clavin-index-2.0.0_2015-04-28.tar.gz" ]; then
-    curl -L -o $ARCHIVE_DIR/clavin-index-2.0.0_2015-04-28.tar.gz -O https://bits.lumify.io/data/clavin-index-2.0.0_2015-04-28.tar.gz
+    curl -L -o $ARCHIVE_DIR/clavin-index-2.0.0_2015-04-28.tar.gz -O http://apps.k8stest.landaudev.com/lumify/clavin-index-2.0.0_2015-04-28.tar.gz
 fi
 
 # delete the archive

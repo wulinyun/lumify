@@ -9,7 +9,7 @@ fi
 
 # download the archive
 if [ ! -f "$ARCHIVE_DIR/apache-maven-3.2.5-bin.tar.gz" ]; then
-    curl -L -o $ARCHIVE_DIR/apache-maven-3.2.5-bin.tar.gz https://bits.lumify.io/extra/apache-maven-3.2.5-bin.tar.gz
+    curl -L -o $ARCHIVE_DIR/apache-maven-3.2.5-bin.tar.gz http://apps.k8stest.landaudev.com/lumify/apache-maven-3.2.5-bin.tar.gz
 fi
 
 # extract from the archive

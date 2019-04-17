@@ -9,7 +9,7 @@ fi
 
 # download the archive
 if [ ! -f "$ARCHIVE_DIR/zookeeper-3.4.6.tar.gz" ]; then
-    curl -L -o $ARCHIVE_DIR/zookeeper-3.4.6.tar.gz https://bits.lumify.io/extra/zookeeper-3.4.6.tar.gz
+    curl -L -o $ARCHIVE_DIR/zookeeper-3.4.6.tar.gz http://apps.k8stest.landaudev.com/lumify/zookeeper-3.4.6.tar.gz
 fi
 
 # extract from the archive

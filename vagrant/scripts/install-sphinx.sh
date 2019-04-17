@@ -15,10 +15,10 @@ fi
 
 # download the archives
 if [ ! -f "$ARCHIVE_DIR/${sphinxbase_tgz}" ]; then
-    curl -L -o $ARCHIVE_DIR/${sphinxbase_tgz} https://bits.lumify.io/extra/${sphinxbase_tgz}
+    curl -L -o $ARCHIVE_DIR/${sphinxbase_tgz} http://apps.k8stest.landaudev.com/lumify/${sphinxbase_tgz}
 fi
 if [ ! -f "$ARCHIVE_DIR/${pocketsphinx_tgz}" ]; then
-    curl -L -o $ARCHIVE_DIR/${pocketsphinx_tgz} https://bits.lumify.io/extra/${pocketsphinx_tgz}
+    curl -L -o $ARCHIVE_DIR/${pocketsphinx_tgz} http://apps.k8stest.landaudev.com/lumify/${pocketsphinx_tgz}
 fi
 
 # extract from the archives
