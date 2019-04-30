@@ -99,6 +99,7 @@ cp /vagrant/vagrant/config/rabbitmq/etc/rabbitmq/rabbitmq.config /opt/rabbitmq_s
 cp /vagrant/vagrant/config/rabbitmq/rabbitmq_init.sh /etc/init.d/rabbitmq
 chmod +x /etc/init.d/rabbitmq
 chkconfig --add rabbitmq
+yum install -y erlang
 service rabbitmq start
 
 # Install Jetty
@@ -118,7 +119,7 @@ cp /vagrant/vagrant/config/jetty/jetty_init.sh /etc/init.d/jetty
 chmod +x /etc/init.d/jetty
 
 # create a link to the opencv_java lib where jetty can find it
-ln -s /usr/local/share/OpenCV/java/libopencv_java249.so /usr/lib/libopencv_java249.so
+#ln -s /usr/local/share/OpenCV/java/libopencv_java249.so /usr/lib/libopencv_java249.so
 ldconfig
 
 # turn iptables firewall off
