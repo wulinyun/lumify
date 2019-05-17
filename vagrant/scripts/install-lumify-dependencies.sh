@@ -9,6 +9,29 @@ cp /vagrant/vagrant/config/yum-repos/CentOS-Base.repo /etc/yum.repos.d/CentOS-Ba
 echo "Install RPM packages"
 /bin/bash /vagrant/vagrant/scripts/install-rpm-packages.sh
 
+
+#ffmpeg
+#yum install -y lumify-videolan-x264 lumify-fdk-aac lumify-lame lumify-opus lumify-ogg lumify-vorbis lumify-vpx lumify-theora lumify-ffmpeg
+/bin/bash /vagrant/vagrant/scripts/install-ffmpeg.sh
+
+#tesseract
+#yum install -y lumify-leptonica lumify-tesseract lumify-tesseract-eng
+/bin/bash  /vagrant/vagrant/scripts/install-leptonica.sh
+/bin/bash  /vagrant/vagrant/scripts/install-tesseract-ocr.sh
+
+
+#CCExtractor
+#yum install -y lumify-ccextractor
+/bin/bash /vagrant/vagrant/scripts/install-ccextractor.sh
+
+#OpenCV
+#yum install -y lumify-opencv
+/bin/bash /vagrant/vagrant/scripts/install-opencv.sh
+
+#CMU Sphinx
+#yum install -y lumify-sphinxbase lumify-pocketsphinx
+/bin/bash /vagrant/vagrant/scripts/install-sphinx.sh
+
 # Install NPM packages
 echo "Install NPM packages"
 /bin/bash /vagrant/vagrant/scripts/install-npm-packages.sh
