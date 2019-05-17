@@ -8,11 +8,11 @@
     <packaging>pom</packaging>
     <name>Lumify</name>
 
-   <!-- <scm>
+    <scm>
         <url>https://github.com/wulinyun/lumify-dev.git</url>
         <connection>scm:git:git://github.com:wulinyun/lumify-dev.git</connection>
         <developerConnection>scm:git:ssh://git@github.com:wulinyun/lumify-dev.git</developerConnection>
-    </scm>-->
+    </scm>
 
     <inceptionYear>2013</inceptionYear>
     <organization>
