@@ -19,18 +19,18 @@ yum install -y erlang npm
 
 #tesseract
 #yum install -y lumify-leptonica lumify-tesseract lumify-tesseract-eng
-/bin/bash  ./install-leptonica.sh
-/bin/bash  ./install-tesseract-ocr.sh
+#/bin/bash  /vagrant/vagrant/scripts/install-leptonica.sh
+#/bin/bash  /vagrant/vagrant/scripts/install-tesseract-ocr.sh
 
 
 #CCExtractor
 #yum install -y lumify-ccextractor
-/bin/bash ./install-ccextractor.sh
+#/bin/bash /vagrant/vagrant/scripts/install-ccextractor.sh
 
 #OpenCV
 #yum install -y lumify-opencv
-/bin/bash ./install-opencv.sh
+#/bin/bash /vagrant/vagrant/scripts/install-opencv.sh
 
 #CMU Sphinx
 #yum install -y lumify-sphinxbase lumify-pocketsphinx
-/bin/bash ./install-sphinx.sh
+#/bin/bash /vagrant/vagrant/scripts/install-sphinx.sh
