@@ -15,7 +15,7 @@ rpm -ivh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.r
 yum install -y erlang
 #ffmpeg
 #yum install -y lumify-videolan-x264 lumify-fdk-aac lumify-lame lumify-opus lumify-ogg lumify-vorbis lumify-vpx lumify-theora lumify-ffmpeg
-/bin/bash /vagrant/vagrant/scripts/install-ffmpeg.sh
+/bin/bash  /vagrant/vagrant/scripts/install-ffmpeg.sh
 
 #tesseract
 #yum install -y lumify-leptonica lumify-tesseract lumify-tesseract-eng
